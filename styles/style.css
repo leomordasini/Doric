@@ -669,7 +669,7 @@ Counters
 	background: #222;
 }
 /* ==============================================
-Services
+Amenities
 =============================================== */
 .service_bg {
 	background: #222;
@@ -685,7 +685,7 @@ Services
 	right: 0;
 }
 .services {
-	background: url(../doric_images/amenities_placeholder.jpg) top center fixed;
+	background: url(../doric_images/danny_front.jpg) top center fixed;
 }
 .services.style_2 {
 	background: url(../images/services_2.jpg) top center fixed;
