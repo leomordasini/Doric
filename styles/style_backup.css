@@ -48,6 +48,12 @@ Animations
 38. Animations
 =============================================== */
 
+/* Mouse Hover change*/
+
+.hand_cursor {
+	cursor: pointer;
+}
+
 /* ==============================================
 Default Styles
 =============================================== */
@@ -236,21 +242,6 @@ Top Head Styles
 	z-index: 99999999 !important;
 	width: 300px;
 }
-
-.table_caption{
-    display: block;
-    width: 100%;
-    background: #f97575;
-    height: 55px;
-    padding-left: 10px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 55px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    box-sizing: border-box;
-}
-
-
 /* ==============================================
 Bootstrap Navbar
 =============================================== */
@@ -270,7 +261,7 @@ Bootstrap Navbar
 	z-index: 99999;
 }
 .navbar-default a.navbar-brand {
-	font-size: 20px;
+	font-size: 35px;
 	color: #FFF;
 	font-family: 'Raleway', sans-serif;
 }
@@ -304,29 +295,6 @@ Bootstrap Navbar
 	font-size: 16px;
 	color: #666;
 }
-
-.arrow {
-    text-align: center;
-    margin: 8% 0;
-}
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
 /* ==============================================
 For Mega Menu
 =============================================== */
@@ -707,7 +675,7 @@ Counters
 	background: #222;
 }
 /* ==============================================
-Services
+Amenities
 =============================================== */
 .service_bg {
 	background: #222;
@@ -1183,8 +1151,7 @@ Clients
 Contact Us
 =============================================== */
 .contact {
-	background: url(../images/contact.jpg) bottom center fixed;
-	color: #DDD;
+	color: black;
 }
 .contact_info {
 	font-size: 16px;
@@ -1200,7 +1167,7 @@ Contact Us
 	width: 50px;
 	font-size: 25px;
 }
-.contact_info li a, .contact_info p {
+.contact_info li a, .contact_info p
 	color: #DDD;
 }
 .contact .form-group {
@@ -1940,78 +1907,6 @@ Custom Screens
 .slider {
 	height: 1000px;
 }
-}
-
-@media screen and (max-width:400px){
-
-.big_block.description{
-	display: none;
-}
-.title_break{
-	display: block;
-}
-.services {
-	display: none;
-}
-.extraStory{
-    display: none; !important;
-}
-}
-
-@media screen and (min-width:400px){
-.fa-arrow-down{
-    display: none;
-}
-}
-
-@media only screen and (max-width: 500px) {
-
-    /* Force table to not be like tables anymore */
-    #no-more-tables table,
-    #no-more-tables thead,
-    #no-more-tables tbody,
-    #no-more-tables th,
-    #no-more-tables td,
-    #no-more-tables tr {
-        display: block;
-    }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
-    #no-more-tables thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    #no-more-tables tr { border: 1px solid #ccc; }
-
-    #no-more-tables td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        white-space: normal;
-        text-align:left;
-    }
-
-    #no-more-tables td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align:left;
-        font-weight: bold;
-    }
-
-    /*
-    Label the data
-    */
-    #no-more-tables td:before { content: attr(data-title); }
 }
 /* ==============================================
 Animations

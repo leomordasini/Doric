@@ -44,102 +44,171 @@
          <link href="styles/style.css" rel="stylesheet">
          <!-- Theme Less styles -->
          <link href="styles/theme_style.less" rel="stylesheet/less">
+          <!-- Footer Stylesheet-->
+          <link href="styles/footer-basic-centered.css" rel="stylesheet">
       </head>
 
-      <body>
-      <section class="wrapper">
-         <header>
-            <div class="top_head">
-               <div class="container-fluid">
-                  <div class="pull-right text-right">
-                     <div class="toggle"><span><a class="trigger" href="#">Residence Login</a></span></div>
-                  </div>
+   <body>
+   <section class="wrapper">
+      <header>
+         <div class="top_head">
+            <div class="container-fluid">
+               <div class="pull-right text-right">
+                  <div class="toggle"><span><a class="trigger" href="#">Residence Login</a></span></div>
                </div>
-            </div>
-
-      <!--navbar-->
-      <nav class="navbar navbar-default">
-         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-               <a class="navbar-brand txt_uc" href="index.html">100 Manhattan Ave</a></div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="availability.html">Availability</a></li>
-                  <li><a href="#">Amenities</a></li>
-                  <li><a href="lifestyle.html">Lifestyle</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
             </div>
          </div>
-      </nav>
-   </header>
 
-   <section class="breadcrumb_bg">
-      <h2>Available Apartments</h2>
+   <!--navbar-->
+   <nav class="navbar navbar-default">
+      <div class="container-fluid">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand txt_uc" href="index.html">100 Manhattan Ave</a></div>
 
-   </section>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="index.html">Home</a></li>
+               <li class="active"><a href="availability.html">Availability</a></li>
+               <li><a href="views.html">Views</a></li>
+               <li><a href="blogs.html">Lifestyle</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+</header>
 
-   <section class="big_block">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-               <div class="row">
-                  <h2 class="text-center">Apartment <strong>1116</strong></h2>
-                  <div class="col-sm-4 client_details">
-                     <h3><strong>Details</strong></h3>
-                     <ul class="">
-                        <li><strong>PRICE :</strong> $210,000</li>
-                        <li><strong>SIZE :</strong> 800 SQFT</li>
-                        <li><strong>ROOMS :</strong>1 BEDROOM, 1 BATH</li>
-                        <li><strong>BROKER :</strong> <a href="#">Debbie Toney</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-sm-8">
-                     <p>Oversized one bedroom one bath unit with balcony overlooking the park. This home is full of
-                        natural light. An updated open kitchen with a breakfast bar, tile backsplash and stainless
-                        steel appliances opens to a spacious living area. Newly renovated tiled bathroom. Abundance
-                        of closet space. </p>
-                     <p>The Doric is replacing the windows in the building. Also, updating halls and
-                        garden area. The Doric is a full service amenity building - concierge, community room, fitness
-                        center, deli, pool and dry cleaners. Shuttle to Hoboken Path. Light rail elevator to Hoboken
-                        one block away. </p>
-                     <br>
-                  </div>
-               </div>
-               <div id="blog_carousel" class="owl-carousel owl-theme">
-                  <div class="item"><img class="img-responsive" src="doric_images/apt1.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt2.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt3.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt4.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt5.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt6.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt7.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt8.png" alt=""/> </div>
-                  <div class="item"><img class="img-responsive" src="doric_images/apt9.png" alt=""/> </div>
-               </div>
+<section class="breadcrumb_bg">
+   <h2>Available Apartments</h2>
+
+</section>
+
+<section class="big_block">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+               <section id="no-more-tables">
+               <div class="table_caption">Studios</div>
+                  <table class="table table-hover">
+                     <thead>
+                        <tr>
+                           <th class="numeric">Unit #</th>
+                           <th class="numeric">Sq. Ft</th>
+                           <th class="numeric">Bathroom</th>
+                           <th class="numeric">Purchase Price</th>
+                           <th class="numeric">Maintenance</th>
+                           <th>More Information</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td data-title="Unit #">506S</td>
+                           <td data-title="Sq. Ft">500</td>
+                           <td data-title="Bathroom">1</td>
+                           <td data-title="Purchase Price">$149,000</td>
+                           <td data-title="Maintenance">$732</td>
+                           <td data-title="More Information"><a target="_blank" href="http://www.zillow.com/homedetails/100-Manhattan-Ave-APT-506S-Union-City-NJ-07087/2121638851_zpid/">Zillow Listing</a></td>
+                        </tr>
+                        <tr>
+                           <td data-title="Unit #">1513S</td>
+                           <td data-title="Sq. Ft">480</td>
+                           <td data-title="Bathroom">1</td>
+                           <td data-title="Purchase Price">$159,000</td>
+                           <td data-title="Maintenance">$710</td>
+                           <td data-title="More Information"><a target="_blank" href="http://www.zillow.com/homedetails/100-Manhattan-Ave-APT-1513S-Union-City-NJ-07087/2097449180_zpid/">Zillow Listing</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <div class="table_caption">One Bedroom</div>
+                  <table class="table table-hover">
+                     <thead>
+                        <tr>
+                           <th class="numeric">Unit #</th>
+                           <th class="numeric">Sq. Ft</th>
+                           <th class="numeric">Bathroom</th>
+                           <th class="numeric">Purchase Price</th>
+                           <th class="numeric">Maintenance</th>
+                           <th>More Information</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td data-title="Unit #">401</td>
+                           <td data-title="Sq. Ft">600</td>
+                           <td data-title="Bathroom">1 Bath</td>
+                           <td data-title="Purchase Price">$210,000</td>
+                           <td data-title="Maintenance">$645</td>
+                           <td data-title="More Information"><a target="_blank" href="http://www.zillow.com/homedetails/100-Manhattan-Ave-APT-401-Union-City-NJ-07087/2131693967_zpid/">Zillow Listing</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <div class="table_caption">Two Bedrooms</div>
+                  <table class="table table-hover">
+                     <thead>
+                        <tr>
+                           <th class="numeric">Unit #</th>
+                           <th class="numeric">Sq. Ft</th>
+                           <th class="numeric">Bathroom</th>
+                           <th class="numeric">Purchase Price</th>
+                           <th class="numeric">Maintenance</th>
+                           <th>More Information</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td data-title="Unit #">310</td>
+                           <td data-title="Sq. Ft">1043</td>
+                           <td data-title="Bathroom">2 Bath</td>
+                           <td data-title="Purchase Price">$369,000</td>
+                           <td data-title="Maintenance">$1,166</td>
+                           <td data-title="More Information"><a target="_blank" href="http://www.zillow.com/homedetails/100-Manhattan-Ave-APT-310-Union-City-NJ-07087/2099164567_zpid/">Zillow Listing</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+               </section>
             </div>
          </div>
       </div>
-   </section>
-   <section class="subscribe big_block">
-      <div class="container">
-         <div class="pull-left appear-animation" data-appear-animation="fadeInLeft">
-            <h2 class="style_2">Subscribe For <strong>updates</strong></h2>
-         </div>
-         <div class="pull-right appear-animation" data-appear-animation="fadeInRight">
-            <form class="form-inline">
-               <div class="form-group">
-                  <input type="email" placeholder="Enter Your Mail id here" id="" class="form-control">
-               </div>
-               <a class="btn btn-default style_3" href="#">Subscribe</a>
-            </form>
-         </div>
+   </div>
+</section>
+<!--section class="subscribe big_block">
+   <div class="container">
+      <div class="pull-left appear-animation" data-appear-animation="fadeInLeft">
+         <h2 class="style_2">Subscribe For <strong>updates</strong></h2>
       </div>
-   </section>
+      <div class="pull-right appear-animation" data-appear-animation="fadeInRight">
+         <form class="form-inline">
+            <div class="form-group">
+               <input type="email" placeholder="Enter Your Mail id here" id="" class="form-control">
+            </div>
+            <a class="btn btn-default style_3" href="#">Subscribe</a>
+         </form>
+      </div>
+   </div>
+</section-->
+
+   <footer class="footer-basic-centered">
+      <p class="footer-company-motto">100 Manhattan Ave · The Doric</p>
+      <p class="footer-links">
+         <a href="index.html">Home</a>
+         ·
+         <a href="availability.html">Availability</a>
+         ·
+         <a href="views.html">Views</a>
+         ·
+         <a href="blogs.html">LifeStyle</a>
+         ·
+         <a href="contact.html">Contact</a>
+      </p>
+      <!--p class="footer-company-name">Leonardo Mordasini &copy; 2016</p-->
+   </footer>
+
 </section>
 
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
