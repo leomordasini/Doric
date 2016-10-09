@@ -48,6 +48,13 @@ Animations
 38. Animations
 =============================================== */
 
+
+.hide-bullets {
+	list-style:none;
+	margin-left: -40px;
+	margin-top:20px;
+}
+
 /* ==============================================
 Default Styles
 =============================================== */
@@ -213,6 +220,9 @@ Top Head Styles
 .big_block {
 	padding: 80px 0;
 }
+.views_block{
+    padding: 30px;
+}
 .top_head {
 	position: relative;
 	line-height: 45px;
@@ -304,7 +314,6 @@ Bootstrap Navbar
 	font-size: 16px;
 	color: #666;
 }
-
 .arrow {
     text-align: center;
     margin: 8% 0;
@@ -314,7 +323,6 @@ Bootstrap Navbar
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
-
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -326,6 +334,9 @@ Bootstrap Navbar
         transform: translateY(-15px);
     }
 }
+.bigger100{
+    font-size: 30px;
+    }
 
 /* ==============================================
 For Mega Menu
@@ -716,18 +727,25 @@ Services
 	padding: 0;
 }
 .service_bg > div > div.services_title {
-	padding: 150px 50px;
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 50px;
 	color: #FFF;
+}
+.service_bg > div > div.services_title > ul.services_link > li, a{
+    padding: 10px 10px 10px 0px;
+    margin: 5px;
+    border: 5px;
 }
 .service_bg > div > div.services_title.pull-right {
 	right: 0;
 }
 .services {
-	background: url(../doric_images/amenities_placeholder.jpg) top center fixed;
+    cursor: pointer;
+	background: url(../doric_images/texture.jpg) top center fixed;
 }
-.services.style_2 {
-	background: url(../images/services_2.jpg) top center fixed;
-}
+
 .services {
 	text-align: center;
 }
@@ -743,7 +761,7 @@ Services
 	color: #FFF;
 }
 .services > div i {
-	font-size: 40px;
+	font-size: 50px;
 }
 .services > div p {
 	color: #FFF;
@@ -1183,8 +1201,7 @@ Clients
 Contact Us
 =============================================== */
 .contact {
-	background: url(../images/contact.jpg) bottom center fixed;
-	color: #DDD;
+	color: #000;
 }
 .contact_info {
 	font-size: 16px;
@@ -1201,7 +1218,7 @@ Contact Us
 	font-size: 25px;
 }
 .contact_info li a, .contact_info p {
-	color: #DDD;
+	color: #000;
 }
 .contact .form-group {
 	margin-bottom: 25px;
@@ -1212,14 +1229,14 @@ Contact Us
 .contact label {
 	font-size: 18px;
 	text-transform: uppercase;
-	color: #FFF;
+	color: #000;
 }
 .contact input.form-control {
 	height: 40px;
 }
 .contact .form-control {
 	background: none;
-	color: #CCC;
+	color: #000;
 }
 .contact .btn-default {
 	height: 40px;
@@ -1528,7 +1545,7 @@ Breadcrumb
 	overflow: hidden;
 	text-align: center;
 	color: #FFF;
-	background: #222 url(../doric_images/skyline_night_breadcrumb.jpg) top center fixed;
+	background: #222 top center fixed;  /* url(../doric_images/skyline_night_breadcrumb.jpg) */
 	position: relative;
 	padding-bottom: 40px;
 	padding-top: 40px;
@@ -1631,7 +1648,7 @@ Mobile and Tablet Screen
 	text-align: left;
 }
 .service_bg > div > div.services_title {
-	padding: 20px 50px 50px;
+	padding: 10px 50px 50px;
 }
 .subscribe > .container > div.pull-right {
 	float: none !important;
@@ -1942,7 +1959,7 @@ Custom Screens
 }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
 
 .big_block.description{
 	display: none;
@@ -1958,7 +1975,7 @@ Custom Screens
 }
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:500px){
 .fa-arrow-down{
     display: none;
 }

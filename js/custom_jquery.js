@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
  	});
 	
 	/* ===============================================
-     Adding Owl Slider Time intervel
+     Adding Owl Slider Time interval
      =============================================== */
     $('.carousel').carousel({
         interval: 3000

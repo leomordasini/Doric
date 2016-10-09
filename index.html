@@ -27,9 +27,9 @@
 <!-- animate styles for animation effects -->
 <link href="styles/animate.css" rel="stylesheet">
 <!-- back_to_top link styles -->
+<!-- Pre Loader -->
+<!--link href="styles/pre_loader.css" rel="stylesheet"-->
 <link href="styles/back_to_top.css" rel="stylesheet">
-<!-- Style Switcher styles -->
-<!--link href="styles/style_switcher.css" rel="stylesheet">
 <!-- gallery styles -->
 <link href="styles/gallery.css" rel="stylesheet">
 <!-- magnific-popup styles -->
@@ -46,7 +46,14 @@
 <link href="styles/footer-basic-centered.css" rel="stylesheet">
 </head>
 <body>
-
+<!--preloader>
+<div class="preloader">
+    <div class="loader-inner ball-scale-ripple-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
 <!--wrapper-->
 <section class="wrapper"> 
     <!--header-->
@@ -65,15 +72,17 @@
             <div class="container-fluid"> 
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand txt_uc" href="index.html">100 Manhattan Ave</a></div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand txt_uc" href="index.html"><span class="bigger100">100</span> Manhattan Ave</a></div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="availability.html" role="button">Availability</a></li>
+                        <li><a href="index.html#amenities">Amenities</a></li>
+                        <li><a href="availability.html">Availability</a></li>
                         <li><a href="views.html">Views</a></li>
-                        <li><a href="blogs.html">Lifestyle</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -81,10 +90,17 @@
         </nav>
     </header>
 
-    <!--slider-->
     <section class="slider">
         <div class="banner">
-            <div class="banner_bg"> <img class="img-responsive" src="doric_images/skyline_night.jpg" alt=""/> </div>
+            <div class="banner_bg">
+                <div class="video_container">
+                    <video autoplay loop muted>
+                        <source src="doric_images/dan/timeLapse1.mp4" type="video/mp4">
+                        <!--source src="videos/video.webm" type="video/webm"-->
+                    </video>
+                    <div class="video_content"> </div>
+                </div>
+            </div>
             <div class="bann_caption">
                 <div class="container">
                     <h2><span class="title_break">Welcome To </span>
@@ -93,100 +109,96 @@
                 <div class="arrow bounce">
                     <a class="fa fa-arrow-down fa-2x" href="#"></a>
                 </div>
-            </div>
-
+             </div>
         </div>
-
     </section>
 
     <!--description-->
     <section class="big_block description">
         <div class="container">
             <div class="col-xs-12">
-                <p>Soaring 24 stories in the sky, The Doric at 100 Manhattan Avenue rises above Hoboken with stunning
-                    views of the Manhattan skyline. With a rich history in providing luxury residential living, every
-                    apartment offers an indulgent amount of space with access to modern amenities and convenient transit
-                    options into Hoboken. Jersey City and Manhattan. The Doric is a thriving community with a diverse
-                    mix of residents dedicated to its success. Like the surrounding area it’s a booming destination for
-                    new home owners and established home owners alike. 100 Manhattan avenue embodies the creative and
-                    lively spirit of the three neighborhoods it intersects. Steps from shopping, dining, arts districts
-                    and entertainment, we believe there is no more exciting and comfortable place to call home.
+                <p>Soaring 23 stories in the sky, The Doric at 100 Manhattan Avenue in Union City, NJ rises above Hoboken
+                    with stunning views of the Manhattan skyline. With a rich history in providing luxury residential
+                    living, every apartment offers an indulgent amount of space with access to modern amenities and
+                    convenient transit options into Hoboken. Jersey City and Manhattan. The Doric is a thriving
+                    community with a diverse mix of residents dedicated to its success. Like the surrounding area it’s
+                    a booming destination for new home owners and established home owners alike. 100 Manhattan Avenue
+                    embodies the creative and lively spirit of the three neighborhoods it intersects. Steps from
+                    shopping, dining, arts districts and entertainment, we believe there is no more exciting and
+                    comfortable place to call home.
                 </p>
             </div>
         </div>
     </section>
 
     <!--Amenities-->
-    <section class="service_bg">
+    <section id="amenities" class="service_bg">
         <div class="container-fluid">
-            <div class="col-lg-4 col-md-12 col-sm-12 services_title">
-                <h2>Doric <strong>Amenities</strong> &nbsp;<i class="fa fa-globe"></i></h2>
-                <p>
-                <ul>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalConcierge">24/7 Concierge</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalLaundry">Full Service Laundry Facilities</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalLaundry2">Valet Dry Cleaner Services</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalDeli">The Hudson Grill Deli</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalGym">24-Hour Fitness Center</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalPool">Outdoor Swimming Pool</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalParking">24/7 Garage & Guest Parking</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalGarden">Community Garden Space</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalCommunity">Community Center Lounge</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ModalShuttle">Free Morning Path Shuttle Service</a></li>
-                </ul>
-                </p>
-            </div>
-
             <div class="col-lg-8 col-md-12 col-sm-12 services">
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalConcierge"><a>
                     <div class="appear-animation" data-appear-animation="fadeInUp"><i class="fa fa-hand-paper-o"></i>
-                        <h3>24/7 Concierge</h3>
-                        <p>Around the clock concierge to serve residents and guests</p>
+                        <h3>24/7 Doorman</h3>
+                        <!--p>Around the clock concierge to serve residents and guests</p-->
                     </div> </a>
                 </div>
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalPool"><a>
                     <div class="appear-animation" data-appear-animation="fadeInUp"><i class="fa fa-life-ring"></i>
                         <h3>Outdoor Pool</h3>
-                        <p>Relax in our Outdoor Swimming Pool & Sundeck overlooking Manhattan Skylines
-                        </p>
+                        <!--p>Relax in our Outdoor Swimming Pool & Sundeck in the summer</p-->
                     </div> </a>
                 </div>
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalParking"><a>
                     <div class="appear-animation delay_1" data-appear-animation="fadeInUp"><i class="fa fa-car"></i>
                         <h3>Garage Parking</h3>
-                        <p>No need to worry about where to park your car, for residents and guests</p>
+                        <!--p>No need to worry about where to park your car, for residents and guests</p-->
                     </div> </a>
                 </div>
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalDeli"><a>
                     <div class="appear-animation delay_2" data-appear-animation="fadeInUp"><i class="fa fa-cutlery"></i>
                         <h3>Hudson Grill Deli</h3>
-                        <p>Delicious in-house deli and pizzeria, perfect for when you don't feel like cooking</p>
+                        <!--p>Delicious in-house deli and pizzeria</p-->
                     </div> </a>
                 </div>
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalCommunity"><a>
                     <div class="appear-animation delay_1" data-appear-animation="fadeInUp"><i class="fa fa-group"></i>
                         <h3>Community Room</h3>
-                        <p>Host a party with your friends, wind down over a game of pool or watch TV
+                        <!--p>Host a party with your friends or wind down over a game of pool</p-->
                     </div> </a>
                 </div>
                 <div class="col-md-4 col-sm-4 hand_cursor" data-toggle="modal" data-target="#ModalGym"><a>
                     <div class="appear-animation delay_2" data-appear-animation="fadeInUp"><i class="fa fa-child"></i>
-                        <h3>Exercise Room</h3>
-                        <p>Convenient fitness center with all your essential equipment and workout necessities</p>
+                        <h3>Fitness Center</h3>
+                        <!--p>Convenient fitness center with all your essential equipment</p-->
                     </div> </a>
                 </div>
             </div>
-
+            <div class="col-lg-4 col-md-12 col-sm-12 services_title">
+                <h2><i class="fa fa-globe"></i><br /> Doric <strong>Amenities</strong> &nbsp;</h2>
+                <p>
+                <ul class="services_link">
+                    <li><a href="#" data-toggle="modal" data-target="#ModalConcierge">24/7 Doorman</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalPool">Outdoor Pool</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalParking">Garage Parking</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalDeli">Hudson Grill Deli</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalCommunity">Community Room</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalGym">Fitness Center</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalLaundry">Laundry Facilities</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalLaundry2">Valet Dry Cleaners</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalGarden">Courtyard</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalShuttle">Shuttle Service</a></li>
+                </ul>
+                </p>
+            </div>
         </div>
     </section>
 
     <br /><br />
 
-    <!-- Latest News-->
+    <!-- Latest Blogs-->
     <section class="big_block news">
         <div class="container">
             <div class="row">
-                <h2 class="text-center">Latest <strong>News</strong></h2>
+                <h2 class="text-center">Latest <strong>Blogs</strong></h2>
                 <div class="col-sm-4">
                     <div class="block style_1 appear-animation delay_2" data-appear-animation="fadeInUp">
                         <h3>What's Happening <br /><strong>In the Neighborhood</strong></h3>
@@ -231,9 +243,9 @@
     <section class="testimonials big_block">
         <div class="container">
             <div class="col-sm-12 col-md-10 col-md-offset-1">
-                <h2 class="style_2 text-center">Doric <strong>Testimonials</strong> &nbsp;<i class="fa fa-comments-o"></i> </h2>
+                <h2 class="style_2 text-center"><i class="fa fa-comments-o"></i><br /> Doric <strong>Testimonials</strong> </h2>
                 <div id="test_carousel" class="owl-carousel owl-theme">
-                    <div class="item"><a href="https://www.yelp.com/biz/the-doric-apartments-union-city">
+                    <div class="item"><a target="_blank" href="https://www.yelp.com/biz/the-doric-apartments-union-city">
                             <p><span>&#8220;</span>All I can say is WOW. The views from the east facing apartments is
                                 breathtaking! The lobby is very modern and clean. There is a lot of staff working to
                                 keep the building safe and clean. The deli is a great feature in the building. The pool
@@ -246,7 +258,7 @@
                     </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.yelp.com/biz/the-doric-apartments-union-city">
+                        <a target="_blank" href="https://www.yelp.com/biz/the-doric-apartments-union-city">
                             <p><span>&#8220;</span>I absolutely love the view from the building. The NY skyline is
                                 spectacular at night! The staff trip over themselves to help out. There are friendly
                                 people living in a beautiful building in a great area and the convenience of a dry
@@ -260,7 +272,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.yelp.com/biz/the-doric-apartments-union-city">
+                        <a target="_blank" href="https://www.yelp.com/biz/the-doric-apartments-union-city">
                             <p><span>&#8220;</span>We have lived here for three months and we absolutely love this place! All
                                 the neighbors are really nice and friendly. My girlfriend works at Manhattan mid town
                                 and her door to door commute is 30 minutes by bus and I work at downtown jersey city which
@@ -270,7 +282,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.yelp.com/biz/the-doric-apartments-union-city">
+                        <a target="_blank" href="https://www.yelp.com/biz/the-doric-apartments-union-city">
                             <p><span>&#8220;</span>This is probably the most under-rated building in the area.  Superb location
                                 with direct access to NYC busses and the Hudson Bergen Light Rail at your doorstep.  Pool,
                                 fitness center, community room, dry cleaners and deli all on site with 24 hour concierge.
@@ -280,7 +292,7 @@
                                 and all hallways.  As a local realtor, I feel it's one of the best values in the area!
                                 <span>&#8221;</span></p>
                             <img src="doric_images/emptyUser.png" width="80" height="80" alt=""/>
-                            <h4>Xiao T.</h4>
+                            <h4>David S.</h4>
                         </a>
                     </div>
                 </div>
@@ -293,15 +305,17 @@
         <p class="footer-links">
             <a href="index.html">Home</a>
             ·
+            <a href="index.html#amenities">Amenities</a>
+            ·
             <a href="availability.html">Availability</a>
             ·
             <a href="views.html">Views</a>
             ·
-            <a href="blogs.html">LifeStyle</a>
+            <a href="blogs.html">Blogs</a>
             ·
             <a href="contact.html">Contact</a>
         </p>
-        <!--p class="footer-company-name">Leonardo Mordasini &copy; 2016</p-->
+        <p class="footer-company-name">Developed by <a target="_blank" href="https://www.linkedin.com/in/leonardomordasini">Leonardo Mordasini</a>|&nbsp;	&nbsp;Maintained by the <a href="committee.html">Doric Digital Media Committee</a></p>
     </footer>
 </section>
 <!--wrapper close-->
@@ -322,11 +336,9 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p>If you hate doing laundry, this place is your new secret to easy living. They offer a full
-                            list of dry cleaning services as well as fluff and fold laundry service, often times same
-                            day!</p>
+                        <p>Need to add this piece</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/danny_front.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/bellblack.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -351,7 +363,7 @@
                             summer heat. An amazing place to relax with your family or make new friends. The best part,
                             unbeatable Manhattan skyline views..</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/apt8.png" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/womanpool.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -373,10 +385,11 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <p>One of the most sought after pieces of real estate in the area is a parking space. Resident
-                            here need not worry we have over 400! Our garage offers residents a great home for their
-                            vehicle, road bikes or Vespa’s. City living with the conveniences of the suburbs.</p>
+                            here need not worry we have 340 spots! Our garage offers residents a great home for their
+                            vehicle, motorcycle, and even over-sized vehicles. City living with the conveniences of the
+                            suburbs.</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/parkingblack2.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -399,10 +412,10 @@
                     <div class="col-sm-6">
                         <p>Our in-house deli and pizzeria, is a staple at the Doric. Great for breakfast and coffee, a
                             quick meal or when you just don’t feel like cooking. Hudson Grill also offers select grocery
-                            staples. This is a building hotspot where local sports are on the TV’s and the everyone
+                            staples. This is a building hotspot where local sports are on the TVs and the everyone
                             knows your name. Don’t forget to say hi to Nick the owner!</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/deli.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/foodblack1.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -424,11 +437,11 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <p>The Doric Community Room is a great new addition to the amenities list. A brand new space
-                            with multiple TV’s, sofas, a bar and billiards table, it a great space to host a private
+                            with multiple TVs, sofas, a bar and pool table, it a great space to host a private
                             party or attend a building event. The community room also hosts our monthly board meetings,
                             so everyone gets a seat.</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/community_room.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/poolblack2.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -452,9 +465,9 @@
                         <p>Most Doric residents are active, it’s not uncommon to see them jogging out the front door,
                             taking their bikes for a spin or on their way to a local yoga class but for times when they
                             just don’t want to leave. You can find them in our building fitness center, which features
-                            TV’s and brand new equipment.</p>
+                            TVs and brand new equipment.</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/doric_gym.png" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/dumbellblack1.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -484,7 +497,7 @@
                             nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
                             tincidunt erat. Ut id nisl quis enim dignissim sagittis.</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/laundryblack3.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -514,7 +527,7 @@
                             nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
                             tincidunt erat. Ut id nisl quis enim dignissim sagittis.</p>
                     </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
+                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/jamey/hangersblack.jpg" alt=""/> </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -531,66 +544,6 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 class="modal-title" id="ModalGardenLabel">Doric <strong>Community Garden Space</strong></h2>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>Proin porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl
-                            quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio
-                            tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula,
-                            bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim
-                            sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id
-                            nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis.</p>
-                    </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default style_2" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ModalMail -->
-<div class="modal fade" id="ModalMail" tabindex="-1" role="dialog" aria-labelledby="ModalMailLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="ModalMailLabel">Doric <strong>Secure Package & Mail Room</strong></h2>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>Proin porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl
-                            quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio
-                            tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula,
-                            bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim
-                            sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id
-                            nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis.</p>
-                    </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default style_2" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ModalDog -->
-<div class="modal fade" id="ModalDog" tabindex="-1" role="dialog" aria-labelledby="ModalDogLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="ModalDogLabel">Washington Square Park <strong>& Dog Park</strong></h2>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -644,44 +597,13 @@
     </div>
 </div>
 
-<!-- ModalBus -->
-<div class="modal fade" id="ModalBus" tabindex="-1" role="dialog" aria-labelledby="ModalBusLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="ModalBusLabel">Express <strong>Bus Service to Manhattan </strong></h2>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>Proin porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl
-                            quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio
-                            tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim sagittis porta erat ligula,
-                            bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id nisl quis enim dignissim
-                            sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt tincidunt erat. Ut id
-                            nisl quis enim dignissim sagittis porta erat ligula, bibendum dapibus odio tempus sed. Ut tincidunt
-                            tincidunt erat. Ut id nisl quis enim dignissim sagittis.</p>
-                    </div>
-                    <div class="col-sm-6"> <img class="img-responsive" src="doric_images/placeholder.jpg" alt=""/> </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default style_2" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <!--Scripts--> 
 <script src="js/jquery-1.11.1-min.js"></script> 
-<script>
+<!--script>
 	$(window).load(function() {
 		$(".preloader").fadeOut("fast");
 	});
-</script> 
+</script-->
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/less-2.5.1-min.js"></script> 
 <script src="js/style_switcher.js"></script> 
@@ -697,12 +619,13 @@
 <!--magnific popup Script--> 
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <!--owl carousel Script--> 
-<script src="js/owl.carousel.min.js"></script> 
+<script src="js/owl.carousel.js"></script>
 <!--Numbersup Script--> 
 <script src="js/jquery.counterup.min.js"></script> 
 <!--Gmaps Script--> 
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
 <script src="js/gmaps.min.js"></script> 
 <script src="js/gmap_script.js"></script>
+
 </body>
 </html>
